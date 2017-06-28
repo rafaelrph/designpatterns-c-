@@ -1,0 +1,6 @@
+d:\users\rafael.barros\documents\visual studio 2017\Projects\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe.config
+d:\users\rafael.barros\documents\visual studio 2017\Projects\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe
+d:\users\rafael.barros\documents\visual studio 2017\Projects\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.pdb
+d:\users\rafael.barros\documents\visual studio 2017\Projects\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.csprojResolveAssemblyReference.cache
+d:\users\rafael.barros\documents\visual studio 2017\Projects\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.exe
+d:\users\rafael.barros\documents\visual studio 2017\Projects\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.pdb
