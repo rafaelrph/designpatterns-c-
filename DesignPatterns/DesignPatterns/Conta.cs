@@ -10,12 +10,14 @@ namespace DesignPatterns
     {
 
         public string Titular { get; private set; }
-        public double Saldo { get; private set; }
+        public double Saldo { get; set; }
+        public StatusConta StatusAtual { get; set;  }
 
         public Conta(double saldo, string titular)
         {
             this.Titular = titular;
             this.Saldo = saldo;
+            this.StatusAtual = new StatusPositivo();
         }
 
         public void Deposita(double valor)

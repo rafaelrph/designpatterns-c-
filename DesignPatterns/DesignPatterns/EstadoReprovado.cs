@@ -8,6 +8,7 @@ namespace DesignPatterns
 {
     public class EstadoReprovado: EstadoOrcamento
     {
+
         public void AplicarDescontoExtra(Orcamento orcamento)
         {
             Console.WriteLine("Desconto não aplicável");

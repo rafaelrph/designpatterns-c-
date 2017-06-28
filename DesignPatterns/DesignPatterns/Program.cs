@@ -22,6 +22,22 @@ namespace DesignPatterns
             Imposto issComposto = new ISS(new ICMS(new ICCC()));
 
             Conta conta = new Conta(600, "Fulano de Tal");
+
+            conta.StatusAtual.Depositar(conta, 150);
+            Console.WriteLine("Saldo = " + conta.Saldo);
+
+            conta.StatusAtual.Sacar(conta, 1000);
+            Console.WriteLine("Saldo = " + conta.Saldo);
+
+            conta.StatusAtual.Sacar(conta, 150);
+            Console.WriteLine("Saldo = " + conta.Saldo);
+
+            conta.StatusAtual.Depositar(conta, 500);
+            Console.WriteLine("Saldo = " + conta.Saldo);
+
+            conta.StatusAtual.Sacar(conta, 150);
+            Console.WriteLine("Saldo = " + conta.Saldo);
+
             Investimento investimento = new Arrojado();
 
             RealizadorInvestimentos realizarImposto = new RealizadorInvestimentos();
@@ -74,6 +90,8 @@ namespace DesignPatterns
             orc1.EstadoAtual.Finalizar(orc1);
             orc1.EstadoAtual.AplicarDescontoExtra(orc1);
             orc1.EstadoAtual.Reprovar(orc1);
+
+
 
             Console.ReadKey();
             

@@ -81,6 +81,9 @@
     <Compile Include="RespostaJSON.cs" />
     <Compile Include="RespostaXML.cs" />
     <Compile Include="SemDesconto.cs" />
+    <Compile Include="StatusConta.cs" />
+    <Compile Include="StatusNegativo.cs" />
+    <Compile Include="StatusPositivo.cs" />
     <Compile Include="TemplateDescontoCondicional.cs" />
     <Compile Include="TemplateRelatorio.cs" />
   </ItemGroup>

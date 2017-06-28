@@ -8,6 +8,7 @@ namespace DesignPatterns
 {
     public interface EstadoOrcamento
     {
+
         void AplicarDescontoExtra(Orcamento orcamento);
 
         void Aprovar(Orcamento orcamento);

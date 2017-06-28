@@ -8,9 +8,24 @@ namespace DesignPatterns
 {
     public class EstadoAprovado: EstadoOrcamento
     {
+        private bool DescontoAplicado { get; set; }
+
+        public EstadoAprovado()
+        {
+            this.DescontoAplicado = false;
+        }
+
         public void AplicarDescontoExtra(Orcamento orcamento)
         {
-            orcamento.Valor -= orcamento.Valor * 0.02;
+            if(! DescontoAplicado)
+            {
+                orcamento.Valor -= orcamento.Valor * 0.02;
+                this.DescontoAplicado = true;
+            } else
+            {
+                Console.WriteLine("Desconto já foi aplicado.");
+            }
+            
         }
 
         public void Aprovar(Orcamento orcamento)
