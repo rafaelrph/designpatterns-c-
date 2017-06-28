@@ -21,6 +21,7 @@ namespace DesignPatterns
             descontoCasada.Proximo = semDesconto;
 
             Console.WriteLine("DESCONTO = " + descontoItens.CalcularDesconto(orcamento));
+
         }
 
     }
