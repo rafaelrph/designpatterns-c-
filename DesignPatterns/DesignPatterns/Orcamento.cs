@@ -9,13 +9,15 @@ namespace DesignPatterns
     public class Orcamento
     {
 
-        public double Valor { get; private set; }
+        public double Valor { get; set; }
         public List<Item> Itens { get; set; }
+        public EstadoOrcamento EstadoAtual { get; set; }
         
         public Orcamento(double valor)
         {
             this.Valor = valor;
             Itens = new List<Item>();
+            this.EstadoAtual = new EstadoEmAprovacao();
         }
 
     }

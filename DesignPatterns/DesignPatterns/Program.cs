@@ -62,6 +62,19 @@ namespace DesignPatterns
             RelatorioSimplificado relatorioSimplificado = new RelatorioSimplificado();
             relatorioSimplificado.Imprimir(contas);
 
+
+            Orcamento orc1 = new Orcamento(500);
+            orc1.EstadoAtual.AplicarDescontoExtra(orc1);
+            Console.WriteLine("ORC = " + orc1.Valor);
+
+            orc1.EstadoAtual.Aprovar(orc1);
+            orc1.EstadoAtual.AplicarDescontoExtra(orc1);
+            Console.WriteLine("ORC = " + orc1.Valor);
+
+            orc1.EstadoAtual.Finalizar(orc1);
+            orc1.EstadoAtual.AplicarDescontoExtra(orc1);
+            orc1.EstadoAtual.Reprovar(orc1);
+
             Console.ReadKey();
             
 

@@ -45,6 +45,11 @@
     <Compile Include="AplicarDesconto.cs" />
     <Compile Include="Arrojado.cs" />
     <Compile Include="CalculadorImpostos.cs" />
+    <Compile Include="EstadoAprovado.cs" />
+    <Compile Include="EstadoEmAprovacao.cs" />
+    <Compile Include="EstadoFinalizado.cs" />
+    <Compile Include="EstadoOrcamento.cs" />
+    <Compile Include="EstadoReprovado.cs" />
     <Compile Include="Formato.cs" />
     <Compile Include="Conservador.cs" />
     <Compile Include="Conta.cs" />
