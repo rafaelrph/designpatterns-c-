@@ -42,8 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectionFactory.cs" />
+    <Compile Include="Do.cs" />
+    <Compile Include="Fa.cs" />
+    <Compile Include="INota.cs" />
+    <Compile Include="La.cs" />
+    <Compile Include="Mi.cs" />
+    <Compile Include="NotasMusicais.cs" />
+    <Compile Include="Piano.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Re.cs" />
+    <Compile Include="Si.cs" />
+    <Compile Include="Sol.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
