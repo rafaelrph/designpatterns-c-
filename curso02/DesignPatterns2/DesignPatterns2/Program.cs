@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns2.Aula03;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -22,7 +23,10 @@ namespace DesignPatterns2
             IDbCommand comando = conexao.CreateCommand();
             comando.CommandText = "SELECT * FROM tabela"; */
 
-            //AULA 02 - FLYWEIGHT
+            /**
+             * ------------------------------
+             * AULA 02 - FLYWEIGHT
+             * ------------------------------
             NotasMusicais notas = new NotasMusicais();
 
             IList<INota> musica = new List<INota>()
@@ -36,7 +40,27 @@ namespace DesignPatterns2
             };
 
             Piano piano = new Piano();
-            piano.Toca(musica);
+            piano.Toca(musica); */
+
+
+            Contrato contrato = new Contrato(DateTime.Now, "Fulano de Tal", TipoContrato.Novo);
+            Console.WriteLine(contrato.Tipo);
+
+            Historico historico = new Historico();
+            historico.Adiciona(new Estado(new Contrato(contrato.Data, contrato.Cliente, contrato.Tipo)));
+
+            contrato.Avanca();
+            historico.Adiciona(new Estado(new Contrato(contrato.Data, contrato.Cliente, contrato.Tipo)));
+            Console.WriteLine(contrato.Tipo);
+
+            contrato.Avanca();
+            historico.Adiciona(new Estado(new Contrato(contrato.Data, contrato.Cliente, contrato.Tipo)));
+            Console.WriteLine(contrato.Tipo);
+
+            Console.WriteLine("Histórico 0: " + historico.Pega(0).Contrato.Tipo);
+            Console.WriteLine("Histórico 1: " + historico.Pega(1).Contrato.Tipo);
+
+            Console.ReadKey();
 
         }
     }

@@ -42,22 +42,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConnectionFactory.cs" />
-    <Compile Include="Do.cs" />
-    <Compile Include="Fa.cs" />
-    <Compile Include="INota.cs" />
-    <Compile Include="La.cs" />
-    <Compile Include="Mi.cs" />
-    <Compile Include="NotasMusicais.cs" />
-    <Compile Include="Piano.cs" />
+    <Compile Include="Aula01\ConnectionFactory.cs" />
+    <Compile Include="Aula02\Do.cs" />
+    <Compile Include="Aula02\Fa.cs" />
+    <Compile Include="Aula02\INota.cs" />
+    <Compile Include="Aula02\La.cs" />
+    <Compile Include="Aula02\Mi.cs" />
+    <Compile Include="Aula02\NotasMusicais.cs" />
+    <Compile Include="Aula02\Piano.cs" />
+    <Compile Include="Aula03\Contrato.cs" />
+    <Compile Include="Aula03\Estado.cs" />
+    <Compile Include="Aula03\Historico.cs" />
+    <Compile Include="Aula03\TipoContrato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Re.cs" />
-    <Compile Include="Si.cs" />
-    <Compile Include="Sol.cs" />
+    <Compile Include="Aula02\Re.cs" />
+    <Compile Include="Aula02\Si.cs" />
+    <Compile Include="Aula02\Sol.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
