@@ -1,4 +1,5 @@
 ﻿using DesignPatterns2.Aula03;
+using DesignPatterns2.Aula06;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -42,7 +43,11 @@ namespace DesignPatterns2
             Piano piano = new Piano();
             piano.Toca(musica); */
 
-
+            /**
+             * ----------------------------
+             * AULA 03 - MEMENTO
+             * ----------------------------
+             * 
             Contrato contrato = new Contrato(DateTime.Now, "Fulano de Tal", TipoContrato.Novo);
             Console.WriteLine(contrato.Tipo);
 
@@ -58,7 +63,18 @@ namespace DesignPatterns2
             Console.WriteLine(contrato.Tipo);
 
             Console.WriteLine("Histórico 0: " + historico.Pega(0).Contrato.Tipo);
-            Console.WriteLine("Histórico 1: " + historico.Pega(1).Contrato.Tipo);
+            Console.WriteLine("Histórico 1: " + historico.Pega(1).Contrato.Tipo); */
+
+
+            IEnviador enviadorEmail = new EnviarPorEmail();
+            IMensagem mensagem = new MensagemCliente("Fulano de Tal Cliente");
+            enviadorEmail.Enviar(mensagem);
+
+            IEnviador enviadorSms = new EnviarPorSMS();
+            enviadorSms.Enviar(mensagem);
+
+            IMensagem mensagemAdm = new MensagemAdministrativa("Fulano Admin");
+            enviadorSms.Enviar(mensagemAdm);
 
             Console.ReadKey();
 

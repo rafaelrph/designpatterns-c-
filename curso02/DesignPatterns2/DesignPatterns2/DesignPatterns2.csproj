@@ -54,6 +54,12 @@
     <Compile Include="Aula03\Estado.cs" />
     <Compile Include="Aula03\Historico.cs" />
     <Compile Include="Aula03\TipoContrato.cs" />
+    <Compile Include="Aula06\EnviarPorEmail.cs" />
+    <Compile Include="Aula06\EnviarPorSMS.cs" />
+    <Compile Include="Aula06\IEnviador.cs" />
+    <Compile Include="Aula06\IMensagem.cs" />
+    <Compile Include="Aula06\MensagemAdministrativa.cs" />
+    <Compile Include="Aula06\MensagemCliente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Aula02\Re.cs" />
