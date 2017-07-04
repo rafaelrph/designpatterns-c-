@@ -1,5 +1,6 @@
 ﻿using DesignPatterns2.Aula03;
 using DesignPatterns2.Aula06;
+using DesignPatterns2.Aula08;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -66,6 +67,11 @@ namespace DesignPatterns2
             Console.WriteLine("Histórico 1: " + historico.Pega(1).Contrato.Tipo); */
 
 
+            /**
+             * ---------------------------------
+             * AULA 06 - BRIDGES
+             * ---------------------------------
+             * 
             IEnviador enviadorEmail = new EnviarPorEmail();
             IMensagem mensagem = new MensagemCliente("Fulano de Tal Cliente");
             enviadorEmail.Enviar(mensagem);
@@ -74,7 +80,13 @@ namespace DesignPatterns2
             enviadorSms.Enviar(mensagem);
 
             IMensagem mensagemAdm = new MensagemAdministrativa("Fulano Admin");
-            enviadorSms.Enviar(mensagemAdm);
+            enviadorSms.Enviar(mensagemAdm); */
+
+
+            Cliente cliente = new Cliente("Fulano Cliente", "fulano@teste.com", 20);
+            GeradorXML geradorXML = new GeradorXML();
+            Console.WriteLine(geradorXML.GerarXML(cliente));
+
 
             Console.ReadKey();
 
